@@ -1298,7 +1298,7 @@ overflow: hidden;
     transform: translate(-50%, -45%);
     color: white;
     font-family: var(--secondary-font);
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
     line-height: 1.5;
 }
@@ -1319,10 +1319,25 @@ overflow: hidden;
 
     .home_banner .sub-headline{
        
-        font-size: 0px;
+        font-size: 50px;
         text-align: center;
         line-height: 1.5;
     }
+    
+
+}
+
+@media screen and (max-width:401px){
+
+    .left_menu_heading{
+        margin-left: 1rem;
+    }
+
+    .right_menu_heading{
+        margin-left: 1rem;
+    }
+
+   
     
 
 }
