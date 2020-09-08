@@ -585,6 +585,33 @@ section{
    }
 }
 
+@media screen and (min-width: 1399px) and (max-width:1454px){
+    .header{
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (min-width: 1455px) {
+
+    .refer{
+        margin-top: -2.3rem!important;
+        margin-left: -0.7rem!important;
+    }
+    
+}
+
+@media screen and (min-width: 1505px) {
+    .header{
+        padding-left: 3rem;
+    }
+
+    
+    
+}
+   
+   
+ 
+
 
 
 
@@ -1314,6 +1341,8 @@ overflow: hidden;
     
 
 }
+
+
 
 @media screen and (max-width:465px){
 
