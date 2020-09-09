@@ -13,9 +13,10 @@ $(function() {
 $('#all_rooms .owl-carousel').owlCarousel({
     
     dots:false,
-      loop: true,
+    loop: true,
      nav:true,
-       autoplay: true,
+     navText: [$('.owl-navigation .owl-nav-prev'),$('.owl-navigation .owl-nav-next')],
+    //    autoplay: true,
      responsive:{
          0:{
              items:1
@@ -28,6 +29,29 @@ $('#all_rooms .owl-carousel').owlCarousel({
          }
      }
 });
+
+$('#all_rooms2 .owl-carousel').owlCarousel({
+    
+    dots:false,
+    loop: true,
+     nav:true,
+     navText: [" ", " "],
+    autoplay: true,
+     responsive:{
+         0:{
+             items:1
+         },
+         600:{
+             items: 2
+         },
+         1000: {
+             items: 3
+         }
+     }
+});
+
+
+
 
 
 

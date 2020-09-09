@@ -1065,7 +1065,7 @@ textarea:focus{
 .card1 a{
     color: var(--secondary-font-color);
     display: inline-block;
-    transition: 650ms;
+    transition: transform 650ms;
 }
 
 .card1 a:hover{
@@ -1079,8 +1079,10 @@ textarea:focus{
 
 
 
+
+
 .card:hover{
-    transform: scale(1.07);
+    transform: scale(1.02);
 }
 
 .card img{
@@ -1235,13 +1237,13 @@ overflow: hidden;
     color: orange;
 }
 
-.room_first{
+/* .room_first{
     text-align: start;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
    
-}
 
-.room_second{
+
+/* .room_second{
     margin-left: 4rem;
     text-align: start;
 }
@@ -1254,7 +1256,7 @@ overflow: hidden;
 .room_fourth{
     text-align: start;
     margin-left: 10rem;
-}
+} */
 
 .room_info{
     margin-top: 2rem;
@@ -3055,7 +3057,56 @@ text-align: left;
         background-color: #1e5799;
         cursor: pointer;
     }
+
+    #all_rooms2 img{
+        padding: 1rem;
+    }
+
+    #all_rooms2 .room_first{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+    #all_rooms2 .room_second{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+    #all_rooms2 .room_third{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+    #all_rooms2 .room_fourth{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
        
+    #all_rooms img{
+        padding: 1rem;
+    }
+
+    #all_rooms .room_first{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+    #all_rooms .room_second{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+    #all_rooms .room_third{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+    #all_rooms .room_fourth{
+        text-align: start;
+        margin-left: 0.8rem;
+    }
+
+   
        
        
 
