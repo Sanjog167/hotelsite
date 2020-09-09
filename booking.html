@@ -8,8 +8,10 @@
     <title>Melbourne Marina Hotel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+   
 </head>
 <body>
 
@@ -57,10 +59,10 @@
                         <a href="media.html" class="nav-link">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a href="feedback.html" class="nav-link feedback">Feedback</a>
+                        <a href="feedback.html" class="nav-link">Feedback</a>
                     </li>
                     <li class="nav-item">
-                        <a href="booking.html" class="nav-link Booking">Booking</a>
+                        <a href="booking.html" class="nav-link">Booking</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link contact">Contact</a>
@@ -68,12 +70,12 @@
                     <li class="nav-item">
                         <a href="references.html" class="nav-link refer">Reference</a>
                     </li>
-                  
                 
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
         <div class="hero about_hero">
             <div class="container">
@@ -87,7 +89,7 @@
                         <div class="asterisk"><i class="fa fa-asterisk"></i></div>
                         <div class="line line-right"></div>
                     </div>
-                    <h2 class="subtitle">Customer Support</h2>
+                    <h2 class="subtitle">Book Us</h2>
                 </div>
                
             </div>
@@ -95,101 +97,82 @@
         </div>
     </main>
 
-
-    <div class="support">
-        <div class="support_header">
-            <h1>How Can We Help You?</h1>
+    <div class="bookings" id="booking">
+        <div class="bookings_header">
+            <h1>Booking and Reservations</h1>
         </div>
 
-        <div class="support_top">
-            <div class="support_left">
-                <h3>GUEST SERVICE</h3>
-                <div class="support_first"> 
-                <h2>Hotel Reservations: 111-222-333</h2>
-                <p>Available 24/7</p>
-                </div>
-                <div class="support_second">  
-                <h2>To leave feedback about the website: 111-222-333</h2>
-                </div>
-                <div class="support_third">  
-                    <h2>Customer Relations: 111-222-333</h2>
-                    <p>Available 24/7</p>
-                </div>
-                <div class="support_fourth">  
-                    <h2>Melbourne Hotels International</h2>
-                    <p>Attn: Melbourne Marina Service Center</p>
-                    <p>A6811 East Mayo Blvd, Suite 100</p>
-                    <p>Available 24/7</p>
-                </div>
+
+        <div class="booking_section">
+            <div class="left_booking">
+                <h3>Guest Information</h3>
+            
+                <div class="booking_left_input">
+                  
+                <input type="text" id="ifirstName" placeholder="First Name*">
+                <input type="text" placeholder="Last Name*">
+                <input type="email" placeholder="Email Address*">
+                <input type="number" placeholder="Phone Number*">
+                <input type="number" placeholder="Postal Code*">
+            
+
+            
+
+               </div>
             </div>
-            <div class="support_right">
-                <h3>Melbourne PRIVILEGES</h3>
-                <div class="support_first"> 
-                <h2>Melbourne Privileges Reservations: 111-222-333</h2>
-                <p>Available 24/7</p>
-                </div>
-                <div class="support_second">  
-                <h2>Melbourne Privileges Service Center: 111-222-333</h2>
-                </div>
-                <div class="support_third">  
-                    <h2>Melbourne Privileges Visa: 111-222-333</h2>
-                    <p>Available 24/7</p>
-                </div>
-                <div class="support_fourth">  
-                    <h2>Barclaycard Customer Service</h2>
-                    <p>Attn: Melbourne Marina Service Center</p>
-                    <p>A6811 East Mayo Blvd, Suite 100</p>
-                    <p>Available 24/7</p>
-                </div>
-                
-            </div>
-        </div>
 
-        
-        <div class="support_bottom">
-            <div class="support_left alternative">
-                <h3>LANGUAGE ASSISTANCE</h3>
-                <div class="support_first"> 
-              
-                <p>Available from 7 a.m.-7 p.m., seven days a week
+            <div class="right_booking">
+                <h3>Guarantee/Payment Method</h3>
 
-                </p>
+                <div class="booking_icons">
+                    <i class="fab fa-4x fa-cc-visa"></i>
+                    <i class="fab fa-4x fa-cc-amex"></i>
+                    <i class="fab fa-4x fa-cc-mastercard"></i>
+                    <i class="fab fa-4x fa-cc-amazon-pay"></i>
+                    <i class="fab fa-4x fa-cc-diners-club"></i>
+                    <i class="fab fa-4x fa-cc-jcb"></i>
                 </div>
-                <div class="support_second">  
-                <h2>En Espanol (Spanish): 866-291-9816                </h2>
-                </div>
-                <div class="support_third">  
-                    <h2>En Francais (French): 800-267-3837
 
-                    </h2>
-               
-                </div>
-                <div class="support_fourth">  
-                    <h2>International Languages: 800-654-6200</h2>
-                 
-                </div>
-            </div>
-            <div class="support_right anotheralternative">
-                <h3>GROUPS & MEETINGS</h3>
-                <div class="support_first"> 
-                <h2>Group Services & Sports Travel <br> (10 or more rooms): 866-351-3033
-                
-              
 
-                </h2>
+
+                <div class="booking_right_input">
+                    
+                <input type="text" placeholder="Name on Card*">
+                <input type="text" placeholder="Card Number*">
+                <input type="date" placeholder="MM/YY*">
              
-             </div>
-          
-                
-            </div>
-        </div>
+                <form class="checkboxform">
+                    <input type="checkbox" name="showRatings" id="showRatings" value="1" checked>
+                    <label class="checkboxlabel" for="showRatings">Use the same address as contact information</label>
+                  </form>
+                  <input type="number" placeholder="Postal Code*">
+                  <form class="checkboxform">
+                    <input type="checkbox" name="showRatings" id="showRatings" value="1" checked>
+                    <label class="checkboxlabel" for="showRatings">Notify me about special offers</label>
+                  </form>
 
+                  <button type="button" id="submit" class="btn btn-primary bookbutton" style="width:160px">Book Now</button>
+                
+               </div>
+            </div>
+
+        </div>
 
        
+
+        
     </div>
 
 
+ 
+
+  
+
+
     
+
+  
+
   
     
    
@@ -241,12 +224,14 @@
                 Copyright © 2020 Melbourne Marina Hotel.com™. All rights reserved.
             </h4>
         </div>
-
+      
         <div class='scrolltop float-right'>
             <i class='fa fa-arrow-up' onclick='topFunction()' id='mybtn'></i>
           </div>
+  
       
     </footer>
+ 
 
 
 
@@ -255,56 +240,56 @@
 
 
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="lightbox-plus-jquery.min.js"></script>    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+<script src="main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <script>  
-        $(document).ready(function(){
-        
-          $(window).scroll(function(){
-            if($(this).scrollTop() > 200){
-              $('#mybtn').fadeIn();
-            }
-            else{
-              $('#mybtn').fadeOut();
-            }
+<script>  
+    $(document).ready(function(){
+    
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 200){
+          $('#mybtn').fadeIn();
+        }
+        else{
+          $('#mybtn').fadeOut();
+        }
+      });
+    
+    
+        $('#mybtn').click(function(){
+              $('html,body').animate({scrollTop: 0}, 1000)
+    
+        })
+    
+    }); 
+    
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
           });
-        
-        
-            $('#mybtn').click(function(){
-                  $('html,body').animate({scrollTop: 0}, 1000)
-        
-            })
-        
-        }); 
-        
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-           
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-        });
+        } // End if
+      });
+    });
 </script>
 
 </body>

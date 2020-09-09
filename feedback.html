@@ -8,8 +8,10 @@
     <title>Melbourne Marina Hotel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+   
 </head>
 <body>
 
@@ -74,6 +76,7 @@
             </nav>
         </div>
     </header>
+
     <main>
         <div class="hero about_hero">
             <div class="container">
@@ -87,7 +90,7 @@
                         <div class="asterisk"><i class="fa fa-asterisk"></i></div>
                         <div class="line line-right"></div>
                     </div>
-                    <h2 class="subtitle">Customer Support</h2>
+                    <h2 class="subtitle">Share Your Feedback</h2>
                 </div>
                
             </div>
@@ -95,101 +98,100 @@
         </div>
     </main>
 
-
-    <div class="support">
-        <div class="support_header">
-            <h1>How Can We Help You?</h1>
-        </div>
-
-        <div class="support_top">
-            <div class="support_left">
-                <h3>GUEST SERVICE</h3>
-                <div class="support_first"> 
-                <h2>Hotel Reservations: 111-222-333</h2>
-                <p>Available 24/7</p>
+    <div class="feedback-container">
+        <h2 class="topheading">Share your Feedback</h2>
+        <form>
+            <h3 class="contactText">Contact Information</h3>
+            <div class="wrap"> 
+            <div class="name">
+                <div class="fname">
+                   
+                    <input id="ifirstName" type="text" placeholder="First Name" />
                 </div>
-                <div class="support_second">  
-                <h2>To leave feedback about the website: 111-222-333</h2>
-                </div>
-                <div class="support_third">  
-                    <h2>Customer Relations: 111-222-333</h2>
-                    <p>Available 24/7</p>
-                </div>
-                <div class="support_fourth">  
-                    <h2>Melbourne Hotels International</h2>
-                    <p>Attn: Melbourne Marina Service Center</p>
-                    <p>A6811 East Mayo Blvd, Suite 100</p>
-                    <p>Available 24/7</p>
+                <div class="lname">
+                    
+                    <input id="ilastName" type="text" placeholder="Last Name" />
                 </div>
             </div>
-            <div class="support_right">
-                <h3>Melbourne PRIVILEGES</h3>
-                <div class="support_first"> 
-                <h2>Melbourne Privileges Reservations: 111-222-333</h2>
-                <p>Available 24/7</p>
-                </div>
-                <div class="support_second">  
-                <h2>Melbourne Privileges Service Center: 111-222-333</h2>
-                </div>
-                <div class="support_third">  
-                    <h2>Melbourne Privileges Visa: 111-222-333</h2>
-                    <p>Available 24/7</p>
-                </div>
-                <div class="support_fourth">  
-                    <h2>Barclaycard Customer Service</h2>
-                    <p>Attn: Melbourne Marina Service Center</p>
-                    <p>A6811 East Mayo Blvd, Suite 100</p>
-                    <p>Available 24/7</p>
-                </div>
+            <div class="address">
                 
+                <input id="iaddress" type="text" placeholder="Address"/>
             </div>
-        </div>
-
-        
-        <div class="support_bottom">
-            <div class="support_left alternative">
-                <h3>LANGUAGE ASSISTANCE</h3>
-                <div class="support_first"> 
-              
-                <p>Available from 7 a.m.-7 p.m., seven days a week
-
-                </p>
+            <div class="location">
+                <div class="city">
+                   
+                    <input id="icity" type="text" placeholder="City" />
                 </div>
-                <div class="support_second">  
-                <h2>En Espanol (Spanish): 866-291-9816                </h2>
-                </div>
-                <div class="support_third">  
-                    <h2>En Francais (French): 800-267-3837
-
-                    </h2>
-               
-                </div>
-                <div class="support_fourth">  
-                    <h2>International Languages: 800-654-6200</h2>
+                <div class="postalcode">
                  
+                    <input id="ipostalCode" type="text" placeholder="City" />
                 </div>
             </div>
-            <div class="support_right anotheralternative">
-                <h3>GROUPS & MEETINGS</h3>
-                <div class="support_first"> 
-                <h2>Group Services & Sports Travel <br> (10 or more rooms): 866-351-3033
-                
-              
-
-                </h2>
-             
-             </div>
-          
-                
+            <div class="phoneDetails">
+                <div class="country">
+                   
+                    <input id="icountry" type="text" placeholder="City/Region Code" />
+                </div>
+                <div class="phone">
+                  
+                    <input id="iphone" type="text" placeholder="Phone Number" />
+                </div>
             </div>
         </div>
-
-
-       
+            <h3 class="reservationText">Reservation Details</h3>
+            <div class="reservation">
+                <p class="reserve">Confirmation Number or Hotels & Dates (Choose One)</p>
+                <p>
+                    Entering your confirmation number will help us locate your past
+                    reservation. If you can't find your confirmation number, select
+                    Hotel & Dates.
+                </p>
+                <div class="confirmation">
+                    <input type="radio" id="confirm-option1" name="confirmType" />
+                    <label for="confirm-option1" name="confirmType"
+                        >Confirmation Number</label
+                    ><br />
+                    <input type="radio" id="confirm-option2" name="confirmType" />
+                    <label for="confirm-option2">Hotel & Dates</label><br />
+                </div>
+            </div>
+            <h3 class="typeText">Feedback Type</h3>
+            <div class="feedbackType">
+                <input type="radio" id="type-option1" name="feedType" />
+                <label for="type-option1">Billing</label><br />
+                <input type="radio" id="type-option2" name="feedType" />
+                <label for="type-option2">Stay Feedback</label><br />
+                <input type="radio" id="type-option3" name="feedType" />
+                <label for="type-option3">Service Feedback</label><br />
+                <input type="radio" id="type-option4" name="feedType" />
+                <label for="type-option4">Account</label><br />
+                <input type="radio" id="type-option5" name="feedType" />
+                <label for="type-option5">Other</label><br />
+            </div>
+            <h3 class="feedbackInput">Feedback</h3>
+            <textarea class="feedbackBody" rows="6" id="ifeedback"></textarea>
+            <h3 class="typeText">Contact Method</h3>
+            <div class="methodType">
+                <input type="radio" id="method-option1" name="methodType" />
+                <label for="method-option1">Call me</label><br />
+                <input type="radio" id="method-option2" name="methodType" />
+                <label for="method-option2">Send me an email</label><br />
+            </div>
+            <div class='submit'>
+                <!-- <input class="submitBtn" type="submit" id="submit" /> -->
+                <button type="button" id="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
     </div>
 
 
+  
+
+
     
+
+  
+
   
     
    
@@ -245,8 +247,10 @@
         <div class='scrolltop float-right'>
             <i class='fa fa-arrow-up' onclick='topFunction()' id='mybtn'></i>
           </div>
+  
       
     </footer>
+ 
 
 
 
@@ -255,56 +259,56 @@
 
 
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="lightbox-plus-jquery.min.js"></script>    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+<script src="main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <script>  
-        $(document).ready(function(){
-        
-          $(window).scroll(function(){
-            if($(this).scrollTop() > 200){
-              $('#mybtn').fadeIn();
-            }
-            else{
-              $('#mybtn').fadeOut();
-            }
+<script>  
+    $(document).ready(function(){
+    
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 200){
+          $('#mybtn').fadeIn();
+        }
+        else{
+          $('#mybtn').fadeOut();
+        }
+      });
+    
+    
+        $('#mybtn').click(function(){
+              $('html,body').animate({scrollTop: 0}, 1000)
+    
+        })
+    
+    }); 
+    
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
           });
-        
-        
-            $('#mybtn').click(function(){
-                  $('html,body').animate({scrollTop: 0}, 1000)
-        
-            })
-        
-        }); 
-        
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-           
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-        });
+        } // End if
+      });
+    });
 </script>
 
 </body>

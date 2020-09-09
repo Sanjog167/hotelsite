@@ -5,7 +5,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Travelix</title>
+    <title>Melbourne Marina Hotel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -42,29 +42,29 @@
                         <a href="dining.html" class="nav-link">Foods</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Events</a>
+                        <a href="meetings.html" class="nav-link">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">FAQs</a>
+                        <a href="faqs.html" class="nav-link">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Customer&nbsp;Support</a>
+                        <a href="support.html" class="nav-link">Customer&nbsp;Support</a>
                     </li>
              
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Media</a>
+                        <a href="media.html" class="nav-link">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Feedback</a>
+                        <a href="feedback.html" class="nav-link">Feedback</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Booking</a>
+                        <a href="booking.html" class="nav-link">Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link contact">Contact</a>
+                        <a href="contact.html" class="nav-link contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link refer">Reference</a>
+                        <a href="references.html" class="nav-link refer">Reference</a>
                     </li>
                 
                 </ul>
@@ -172,11 +172,7 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="h_iframe">
-        <iframe  src="https://www.youtube.com/embed/cQK-s2dhfHQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
+
 
 <footer class="footer">
     <div class="container">
@@ -194,7 +190,7 @@
         <div class="instagram" data-aos="fade-left" data-aos-delay="200">
             <h2>Instagram</h2>
             <div class="flex-row">
-                <img src="https://images.pexels.com/photos/172872/pexels-photo-172872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="height: 53px;" alt="insta1">
+                <img src="https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="insta1">
                 <img src="https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="insta2">
                 <img src="https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="insta3">
             </div>
@@ -222,6 +218,10 @@
             Copyright © 2020 Melbourne Marina Hotel.com™. All rights reserved.
         </h4>
     </div>
+
+    <div class='scrolltop float-right'>
+        <i class='fa fa-arrow-up' onclick='topFunction()' id='mybtn'></i>
+      </div>
   
 </footer>
  
@@ -235,8 +235,55 @@
 
 
 
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
 <script src="main.js"></script>
+
+
+<script>  
+    $(document).ready(function(){
+    
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 200){
+          $('#mybtn').fadeIn();
+        }
+        else{
+          $('#mybtn').fadeOut();
+        }
+      });
+    
+    
+        $('#mybtn').click(function(){
+              $('html,body').animate({scrollTop: 0}, 1000)
+    
+        })
+    
+    }); 
+    
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+</script>
 </body>
 </html>
 

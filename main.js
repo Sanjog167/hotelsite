@@ -51,6 +51,42 @@ $('#gallery_image .owl-carousel').owlCarousel({
    
 });
 
+$("#submit").click(function(){
+
+
+var name = $("#ifirstName").val();
+var lastname = $("#ilastName").val();
+var address = $("#iaddress").val();
+var city = $("#icity").val();
+var postalcode = $("#ipostalCode").val();
+var country = $("#icountry").val();
+var phone = $("#iphone").val();
+var feedback = $("#ifeedback").val();
+var card = $("#icard").val();
+var email = $("#iemail").val();
+var cardNumber = $("#icardNumber").val();
+var date = $("#idate").val();
+
+
+if(name == '' || lastname== '' || email=='' || cardNumber == '' || date == '' || card == '' || address == '' || lastname =='' || city == '' || postalcode=='' || country == '' || phone == '' || feedback == ''){
+    swal({
+        title: "Fields Empty!",
+        text: "Please check the missing fields!",
+        icon: "warning",
+      });
+    }
+
+    else{
+        swal({
+            title: "Successfully submited!",
+            text: "Click Ok to continue",
+            icon: "success",
+          });
+    }
+
+
+})
+
 
 
 
